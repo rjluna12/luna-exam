@@ -12,7 +12,7 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, '/app.css'));
 });
 app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname, 'public/app.js'));
+  res.sendFile(path.join(__dirname, '/app.html'));
 });
 app.get('*', function(req, res){
   res.status(404).sendFile(path.join(__dirname, 'views/404.html'));
