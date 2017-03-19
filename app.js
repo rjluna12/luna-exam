@@ -48,3 +48,4 @@ let html = `
 
 	
 
+console.log("App javascript has been loaded!");
