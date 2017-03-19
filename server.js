@@ -9,10 +9,10 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(path.join(__dirname, 'public')));
 //express routes
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/app.html'));
+  res.sendFile(path.join(__dirname, '/app.css'));
 });
 app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/about.html'));
+  res.sendFile(path.join(__dirname, 'public/app.js'));
 });
 app.get('*', function(req, res){
   res.status(404).sendFile(path.join(__dirname, 'views/404.html'));
